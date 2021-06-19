@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Prime Bingo Tracker:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Prime_Bingo_Tracker_jar</output-path>
+    <root id="archive" name="Prime Bingo Tracker.jar">
+      <element id="module-output" name="Prime Bingo Tracker" />
+    </root>
+  </artifact>
+</component>
