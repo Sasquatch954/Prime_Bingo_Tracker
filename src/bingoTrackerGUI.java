@@ -18,11 +18,11 @@ public class bingoTrackerGUI {
     private JButton plasmaWithFlamethrower;
     private JButton platedBeetle;
     private JButton powerWithSupers;
-    private JButton powerbombStructures;
+    private JButton bendeziumStructures;
     private JButton resetButton;
     private JButton shadowPirates;
     private JButton spinners;
-    private JButton superMissleStructures;
+    private JButton corditeStructures;
     private JButton tallonSave;
     private JButton waveWithWavebuster;
     private JCheckBox activateTheObservatoryCheckBox;
@@ -70,7 +70,7 @@ public class bingoTrackerGUI {
     private JLabel shadowPiratesInX;
     private JLabel spinnersLabel;
     private JLabel stucturesBrokenWithPowerLabel;
-    private JLabel superMissleStructuresLabel;
+    private JLabel corditeStructuresLabel;
     private JLabel tallonOverworld;
     private JLabel wavePiratesWithWavebuster;
     private JPanel mainPanel;
@@ -299,8 +299,8 @@ public class bingoTrackerGUI {
         spinnersLabel.setForeground(Color.BLACK);
         stucturesBrokenWithPowerLabel.setBackground(Color.WHITE);
         stucturesBrokenWithPowerLabel.setForeground(Color.BLACK);
-        superMissleStructuresLabel.setBackground(Color.WHITE);
-        superMissleStructuresLabel.setForeground(Color.BLACK);
+        corditeStructuresLabel.setBackground(Color.WHITE);
+        corditeStructuresLabel.setForeground(Color.BLACK);
         tallonOverworld.setBackground(Color.WHITE);
         tallonOverworld.setForeground(Color.BLACK);
         wavePiratesWithWavebuster.setBackground(Color.WHITE);
@@ -611,33 +611,33 @@ public class bingoTrackerGUI {
                 }
             }
         });
-        superMissleStructures.addMouseListener(new MouseAdapter() {
+        corditeStructures.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getButton() == e.BUTTON1) {
-                    if (count13 < 5)
+                    if (count13 < 4)
                         count13++;
-                    superMissleStructures.setText("" + count13);
+                    corditeStructures.setText("" + count13);
                 }
                 if (e.getButton() == e.BUTTON3) {
                     if (count13 > 0)
                         count13--;
-                    superMissleStructures.setText("" + count13);
+                    corditeStructures.setText("" + count13);
                 }
             }
         });
-        powerbombStructures.addMouseListener(new MouseAdapter() {
+        bendeziumStructures.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
                 if (e.getButton() == e.BUTTON1) {
-                    if (count14 < 3)
+                    if (count14 < 8)
                         count14++;
-                    powerbombStructures.setText("" + count14);
+                    bendeziumStructures.setText("" + count14);
                 }
                 if (e.getButton() == e.BUTTON3) {
                     if (count14 > 0)
                         count14--;
-                    powerbombStructures.setText("" + count14);
+                    bendeziumStructures.setText("" + count14);
                 }
             }
         });
@@ -661,8 +661,8 @@ public class bingoTrackerGUI {
                     shadowPirates.setText("0");
                     chozoGhosts.setText("0");
                     metroids.setText("0");
-                    superMissleStructures.setText("0");
-                    powerbombStructures.setText("0");
+                    corditeStructures.setText("0");
+                    bendeziumStructures.setText("0");
                     spinners.setText("0");
 
                     activateTheObservatoryCheckBox.setSelected(false);
